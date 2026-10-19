@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+padding: 30px;
+font-family: Arial, sans-serif;
+text-align: center;
+background: linear-gradient(135deg, #151515, #2b2b2b);
+color: white;
+}
+
+/* Main title */
+
+h1 {
+font-size: 42px;
+margin-bottom: 10px;
+text-shadow: 3px 3px 5px black;
+}
+
+body > p {
+font-size: 18px;
+color: #cccccc;
+}
+
+/* Fighter selection area */
+
+.fight-selection {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+margin-top: 40px;
+}
+
+/* Fighter cards */
+
+.fighter-selection {
+width: 300px;
+min-height: 400px;
+padding: 25px;
+
+```
+background: #202020;
+border: 2px solid #555;
+border-radius: 15px;
+
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+```
+
+}
+
+.fighter-selection h2 {
+margin-top: 0;
+font-size: 24px;
+}
+
+/* Dropdown */
+
+select {
+width: 100%;
+padding: 12px;
+
+```
+font-size: 16px;
+color: white;
+
+background: #333;
+border: 1px solid #777;
+border-radius: 8px;
+
+cursor: pointer;
+```
+
+}
+
+/* Fighter images */
+
+.fighter-selection img {
+width: 220px;
+height: 250px;
+
+```
+margin-top: 20px;
+
+object-fit: contain;
+
+border-radius: 10px;
+```
+
+}
+
+/* VS */
+
+.vs h2 {
+font-size: 45px;
+margin: 0;
+
+```
+text-shadow: 3px 3px 5px black;
+```
+
+}
+
+/* Start button */
+
+#startFight {
+margin-top: 35px;
+
+```
+padding: 15px 40px;
+
+font-size: 20px;
+font-weight: bold;
+
+color: white;
+background: #b30000;
+
+border: none;
+border-radius: 10px;
+
+cursor: pointer;
+
+transition: 0.2s;
+```
+
+}
+
+#startFight {
+background: #e00000;
+transform: scale(1.05);
+}
+
+/* Result box */
+
+#result {
+width: 650px;
+max-width: 90%;
+
+```
+margin: 40px auto 0;
+padding: 20px;
+
+background: #202020;
+
+border: 2px solid #555;
+border-radius: 15px;
+
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+```
+
+}
+
+#result h2 {
+margin-top: 0;
+}
+
+#winner {
+font-size: 18px;
+color: #cccccc;
+}
+
+/* Smaller screens */
+
+@media (max-width: 800px) {
+
+```
+.fight-selection {
+    flex-direction: column;
+    gap: 25px;
+}
+
+.vs {
+    order: 2;
+}
+
+.fighter-selection {
+    width: 90%;
+    max-width: 300px;
+}
+```
+
+}
+
+#stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.stat-card {
+    width: 250px;
+    padding: 20px;
+
+    background: #303030;
+    border-radius: 10px;
+    border: 1px solid #555;
+}
+
+.stat-card h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.stat-card p {
+    margin: 8px 0;
+    color: #cccccc;
+}
+
+.hp-bar {
+    width: 100%;
+    height: 25px;
+
+    background: #555;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin: 15px 0 5px;
+}
+
+.hp-fill {
+    width: 100%;
+    height: 100%;
+
+    background: #00c853;
+
+    transition: width 0.3s;
+}

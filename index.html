@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Who Will Win This Fight?</title>
+
+```
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+<!-- AUDIO -->
+<audio id="selectMusic" src="audio/character-select-music.mp3" loop></audio>
+
+<audio id="chooseFighterSound" src="audio/choose-fighter.mp3"></audio>
+
+<audio id="deadpoolSound" src="audio/deadpool.mp3"></audio>
+<audio id="gokuSound" src="audio/goku.mp3"></audio>
+<audio id="machoManSound" src="audio/macho-man.mp3"></audio>
+<audio id="koolAidManSound" src="audio/kool-aid-man.mp3"></audio>
+<audio id="metalSonicSound" src="audio/metal-sonic.mp3"></audio>
+<audio id="poSound" src="audio/po.mp3"></audio>
+
+<audio id="fightStartSound" src="audio/fight-start.mp3"></audio>
+<audio id="deadpoolWinSound" src="audio/deadpool-win.mp3"></audio>
+<audio id="gokuWinSound" src="audio/goku-win.mp3"></audio>
+<audio id="machoManWinSound" src="audio/macho-man-win.mp3"></audio>
+<audio id="koolAidManWinSound" src="audio/kool-aid-man-win.mp3"></audio>
+<audio id="metalSonicWinSound" src="audio/metal-sonic-win.mp3"></audio>
+<audio id="poWinSound" src="audio/po-win.mp3"></audio>
+<body>
+
+```
+<h1><b>WHO WILL WIN THIS FIGHT?</b></h1>
+
+<p>Choose your fighter and opponent!</p>
+
+
+<div class="fight-selection">
+
+    <!-- YOUR FIGHTER -->
+    <div class="fighter-selection">
+
+        <h2>YOUR FIGHTER</h2>
+
+        <select id="fighter">
+            <option value="">-- Choose Fighter --</option>
+            <option value="deadpool">Deadpool</option>
+            <option value="goku">Goku</option>
+            <option value="macho-man">Macho Man Randy Savage</option>
+            <option value="kool-aid-man">Kool-Aid Man</option>
+            <option value="metal-sonic">Metal Sonic</option>
+            <option value="po">Po</option>
+        </select>
+
+        <br><br>
+
+        <img id="fighterImage"
+             src="images/question-mark.jpg"
+             alt="Your fighter">
+
+    </div>
+
+
+    <!-- VS -->
+    <div class="vs">
+        <h2>VS</h2>
+    </div>
+
+
+    <!-- OPPONENT -->
+    <div class="fighter-selection">
+
+        <h2>OPPONENT</h2>
+
+        <select id="opponent">
+            <option value="">-- Choose Opponent --</option>
+            <option value="deadpool">Deadpool</option>
+            <option value="goku">Goku</option>
+            <option value="macho-man">Macho Man Randy Savage</option>
+            <option value="kool-aid-man">Kool-Aid Man</option>
+            <option value="metal-sonic">Metal Sonic</option>
+            <option value="po">Po</option>
+        </select>
+
+        <br><br>
+
+        <img id="opponentImage"
+             src="images/question-mark.jpg"
+             alt="Opponent">
+
+    </div>
+
+</div>
+
+
+<br>
+
+<button id="startFight">START FIGHT!</button>
+
+
+<div id="result">
+
+    <h2>FIGHT RESULT</h2>
+
+    <p id="winner">Choose two fighters to begin.</p>
+
+    <div id="stats">
+        <!-- Fighter stats will appear here -->
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>
